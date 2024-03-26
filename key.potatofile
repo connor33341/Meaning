@@ -1,0 +1,33 @@
+comment: "CW Potato file format; no comment blocks yet"
+
+key: "88124358607853412"
+reg: "566781234679830"
+match: f"{%feild.harvest.potato.util.regx.mtc%}{!cache.cwof!}"
+
+use strict
+use err.caught.pause
+
+import cwof
+import cwft
+import cwpf
+import sys.defaults*
+
+package cwps.parser
+package cwps.compiler
+package cwps.rte
+package cwcs.env.pkrte.vm
+
+namespace cwpf
+
+.potato begin
+.feild self.feild
+WRTBA cwof.ld {key,match,reg}
+LDBA
+JSR cwpsmain
+
+.cwpsmain
+RF cwps.bundle::self{parser,complier,rte}
+SO feild ireland
+SO potato process RA::cwps.bundled
+
+.famine
