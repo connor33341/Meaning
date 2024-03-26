@@ -1,2 +1,7 @@
 [#]:"CW output file";
-[@]:"META//idp:";
+[@]:"META//crd:!SELFREF.dir&&!fs.extract.creationdate";
+[$:IDPC]:"TYPE//utf-8&&text/plain";
+[@:IDPC]:"META//idp:start.babelindex";
+[@:!PARSER.CWOF.lfs.ro]:"FROM//!PREVIOUS";
+[!:!COMPILER.CWOF.ex.0:this.PRINTOUT<bool>{true}]:"Exited with an exit code of 0";
+!FROM!::"python main.py"
